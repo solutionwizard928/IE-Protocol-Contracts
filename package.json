@@ -1,0 +1,27 @@
+{
+  "name": "intell-truffle-deployer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "truffle deploy --network bscTestnet --reset --compile-none",
+    "deploy-mainnet": "truffle deploy --network bsc --reset --compile-none",
+    "verify": "truffle run verify IntellShareNFTContract@0x3ea4B2f7E44eb1132588118Cd710596328Fe1672 --forceConstructorArgs string:000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000c9c806a2986ce19d0eb3dfbc2ceb7b8492e3f4ee000000000000000000000000000000000000000000000000000000000000000d4672656e6368204672792041490000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000034646410000000000000000000000000000000000000000000000000000000000 --network bscTestnet"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.3",
+    "@openzeppelin/contracts-upgradeable": "^4.8.3",
+    "@openzeppelin/truffle-upgrades": "^1.18.0",
+    "@truffle/hdwallet-provider": "^2.1.9",
+    "truffle-plugin-verify": "^0.6.2"
+  }
+}
+
+
+
